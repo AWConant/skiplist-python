@@ -2,10 +2,11 @@ import unittest
 import random
 from skiplist import SkipList, LayerList
 
+MAX = 5000
+
 class TestLayerList(unittest.TestCase):
     def test_layerlist(self):
         xs = LayerList(None)
-        MAX = 5000
         sample = range(MAX)
         random.shuffle(sample)
         for i in sample:
